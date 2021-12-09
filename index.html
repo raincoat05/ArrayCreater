@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="varselecter">
+        <h2>var selecter</h2>
+        <div class="verselecerbuttonbox">
+            <input class="varselecter_button" type="button" value="var"></input>
+            <input class="varselecter_button" type="button" value="let"></input>
+            <input class="varselecter_button" type="button" value="const"></input>
+        </div>
+    </div>
+
+    <div class="inputarray">
+        <input type="text" placeholder="array name">
+        <input type="button" value="[array]">
+        <input type="button" value="{array}">
+    </div>
+
+    <div>
+        <input class="inputitem_addbutton" type="button" value="add item"></input>
+        <div class="inputitem">
+            <input class="inputitem_text" placeholder="item name"></input>
+            <input type="button" value="&#39;item&#39;">
+            <input type="button" value="&quot;item&quot;">
+            <input type="button" value="item">
+            <input type="button" value="{item}">
+        </div>
+    </div>
+
+    <div class="result">
+        <h2 class="result_title">result</h2>
+        <p class="resule-text"></p>
+        <div class="resule_copybutton"></div>
+    </div>
+
+    <!-- ... other HTML ... -->
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="main.js"></script>
+</body>
+
+</html>
